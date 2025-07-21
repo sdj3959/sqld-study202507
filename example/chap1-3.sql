@@ -22,6 +22,8 @@ FROM POSTS
 WHERE USER_ID = 1 OR POST_TYPE = 'video'
 ;
 
+-- 유저아이디가 1번이 아닌 유저의 모든 게시물
+-- <> : 같지 않음
 SELECT *
 FROM POSTS
 WHERE USER_ID <> 1
